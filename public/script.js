@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const selectImage = document.querySelector('.select-image');
+    // const selectImage = document.querySelector('.select-image');
     const inputFile = document.querySelector('#file');
     const imgArea = document.querySelector('.img-area');
 
-    selectImage.addEventListener('click', function () {
-        inputFile.click();
-    })
+    // selectImage.addEventListener('click', function (event) {
+    //     // event.preventDefault();
+    //     // inputFile.click();
+    // })
 
     inputFile.addEventListener('change', function () {
         const image = this.files[0]
