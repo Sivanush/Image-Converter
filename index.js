@@ -19,6 +19,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/',userRoute)
 
-
+app.get('*', (req, res) => {
+    res.redirect('/');
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

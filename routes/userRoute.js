@@ -8,7 +8,7 @@ const upload = multer({ storage: storage });
 
 
 
-userRoute.get('/home',userController.loadPage)
+userRoute.get('/',userController.loadPage)
 userRoute.post('/image', upload.single('image'),userController.imagePng)
 
 
